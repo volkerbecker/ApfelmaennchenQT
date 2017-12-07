@@ -1,0 +1,245 @@
+<ui version="4.0" >
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow" >
+  <property name="geometry" >
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>481</width>
+    <height>167</height>
+   </rect>
+  </property>
+  <property name="windowTitle" >
+   <string>MainWindow</string>
+  </property>
+  <widget class="QWidget" name="centralwidget" >
+   <widget class="QWidget" name="layoutWidget" >
+    <property name="geometry" >
+     <rect>
+      <x>10</x>
+      <y>10</y>
+      <width>451</width>
+      <height>111</height>
+     </rect>
+    </property>
+    <layout class="QHBoxLayout" name="horizontalLayout" >
+     <item>
+      <widget class="QGroupBox" name="groupBox" >
+       <property name="enabled" >
+        <bool>true</bool>
+       </property>
+       <property name="title" >
+        <string>Gebiet</string>
+       </property>
+       <layout class="QFormLayout" name="formLayout" >
+        <item row="0" column="0" >
+         <layout class="QGridLayout" name="gridLayout" >
+          <item row="0" column="3" >
+           <widget class="QLabel" name="label_3" >
+            <property name="text" >
+             <string>Min</string>
+            </property>
+           </widget>
+          </item>
+          <item row="0" column="4" >
+           <widget class="QLabel" name="label_4" >
+            <property name="text" >
+             <string>Max</string>
+            </property>
+           </widget>
+          </item>
+          <item row="1" column="0" >
+           <widget class="QLabel" name="label" >
+            <property name="text" >
+             <string>Realteil (x-Achse)</string>
+            </property>
+           </widget>
+          </item>
+          <item row="1" column="1" colspan="2" >
+           <spacer name="horizontalSpacer" >
+            <property name="orientation" >
+             <enum>Qt::Horizontal</enum>
+            </property>
+            <property name="sizeHint" stdset="0" >
+             <size>
+              <width>28</width>
+              <height>20</height>
+             </size>
+            </property>
+           </spacer>
+          </item>
+          <item row="1" column="3" >
+           <widget class="QDoubleSpinBox" name="realMinSpinBox" >
+            <property name="decimals" >
+             <number>10</number>
+            </property>
+            <property name="minimum" >
+             <double>-5.000000000000000</double>
+            </property>
+            <property name="maximum" >
+             <double>5.000000000000000</double>
+            </property>
+            <property name="value" >
+             <double>-2.000000000000000</double>
+            </property>
+           </widget>
+          </item>
+          <item row="1" column="4" >
+           <widget class="QDoubleSpinBox" name="realMaxSpinBox" >
+            <property name="decimals" >
+             <number>10</number>
+            </property>
+            <property name="minimum" >
+             <double>-5.000000000000000</double>
+            </property>
+            <property name="maximum" >
+             <double>5.000000000000000</double>
+            </property>
+            <property name="value" >
+             <double>2.000000000000000</double>
+            </property>
+           </widget>
+          </item>
+          <item row="2" column="0" colspan="2" >
+           <widget class="QLabel" name="label_2" >
+            <property name="text" >
+             <string>Imaginärteil (y-Achse)</string>
+            </property>
+           </widget>
+          </item>
+          <item row="2" column="2" >
+           <spacer name="horizontalSpacer_2" >
+            <property name="orientation" >
+             <enum>Qt::Horizontal</enum>
+            </property>
+            <property name="sizeHint" stdset="0" >
+             <size>
+              <width>28</width>
+              <height>20</height>
+             </size>
+            </property>
+           </spacer>
+          </item>
+          <item row="2" column="3" >
+           <widget class="QDoubleSpinBox" name="imagMinSpinBox" >
+            <property name="decimals" >
+             <number>10</number>
+            </property>
+            <property name="minimum" >
+             <double>-5.000000000000000</double>
+            </property>
+            <property name="maximum" >
+             <double>5.000000000000000</double>
+            </property>
+            <property name="value" >
+             <double>-2.000000000000000</double>
+            </property>
+           </widget>
+          </item>
+          <item row="2" column="4" >
+           <widget class="QDoubleSpinBox" name="imagMaxSpinBox" >
+            <property name="decimals" >
+             <number>10</number>
+            </property>
+            <property name="minimum" >
+             <double>-5.000000000000000</double>
+            </property>
+            <property name="maximum" >
+             <double>5.000000000000000</double>
+            </property>
+            <property name="value" >
+             <double>2.000000000000000</double>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </item>
+       </layout>
+      </widget>
+     </item>
+     <item>
+      <widget class="QPushButton" name="calculateButton" >
+       <property name="text" >
+        <string>&amp;Berechnung</string>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </widget>
+  </widget>
+  <widget class="QMenuBar" name="menubar" >
+   <property name="geometry" >
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>481</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menuGgg" >
+    <property name="title" >
+     <string>Datei</string>
+    </property>
+    <addaction name="action_Load" />
+    <addaction name="action_Save" />
+    <addaction name="action_Save_as" />
+    <addaction name="action_Export" />
+    <addaction name="action_Print" />
+    <addaction name="separator" />
+   </widget>
+   <widget class="QMenu" name="menuAbout" >
+    <property name="title" >
+     <string>About</string>
+    </property>
+   </widget>
+   <widget class="QMenu" name="menuOptionen" >
+    <property name="title" >
+     <string>Optionen</string>
+    </property>
+    <addaction name="actionBerechnungsoptionen" />
+    <addaction name="action_Grafikoptionen" />
+   </widget>
+   <addaction name="menuGgg" />
+   <addaction name="menuOptionen" />
+   <addaction name="menuAbout" />
+  </widget>
+  <widget class="QStatusBar" name="statusbar" />
+  <action name="action_Load" >
+   <property name="text" >
+    <string>&amp;Load</string>
+   </property>
+  </action>
+  <action name="action_Save" >
+   <property name="text" >
+    <string>&amp;Save</string>
+   </property>
+  </action>
+  <action name="action_Save_as" >
+   <property name="text" >
+    <string>&amp;Save as</string>
+   </property>
+  </action>
+  <action name="action_Export" >
+   <property name="text" >
+    <string>&amp;Export</string>
+   </property>
+  </action>
+  <action name="action_Print" >
+   <property name="text" >
+    <string>&amp;Print</string>
+   </property>
+  </action>
+  <action name="actionBerechnungsoptionen" >
+   <property name="text" >
+    <string>&amp;Berechnungsoptionen</string>
+   </property>
+  </action>
+  <action name="action_Grafikoptionen" >
+   <property name="text" >
+    <string>&amp;Grafikoptionen</string>
+   </property>
+  </action>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
